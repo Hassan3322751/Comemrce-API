@@ -60,8 +60,8 @@ router.post(
       payment_method_types: ["card"],
       line_items: line_items,
       mode: "payment",
-      success_url: "http://localhost:3000/PaymentSuccess", 
-      cancel_url:"http://localhost:3000/PaymentFailed"
+      success_url: "https://e-commerce-mu-flax.vercel.app/PaymentSuccess", 
+      cancel_url:"https://e-commerce-mu-flax.vercel.app/PaymentFailed"
     })
 
     order.paymentId = session.id;
