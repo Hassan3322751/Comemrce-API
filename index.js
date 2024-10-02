@@ -36,7 +36,7 @@ app.use('/api/upload', uploadRouter);
 const publicFolder = path.join(__dirname, 'public');
 app.use(express.static(publicFolder));
 
-app.get('/', (req, res) => {
+app.get('/api/', (req, res) => {
   res.status(200).send('Api Working Fine')
 })
 
