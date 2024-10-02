@@ -24,7 +24,7 @@ app.use(cookieParser())
 app.use(
   cors({
     credentials: true,
-    origin: [process.env.FRONTEND_URL],
+    origin: [process.env.FRONTEND_URL, 'https://e-commerce-mu-flax.vercel.app'],
   })
 );
 
