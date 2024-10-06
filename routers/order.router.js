@@ -7,8 +7,11 @@ import { OrderStatus } from '../constants/orderStatus.js';
 import { UserModel } from '../models/user.model.js';
 import { sendEmailReceipt } from '../helpers/mail.helper.js';
 
+import dotenv from 'dotenv';
+dotenv.config();
+
 import stripe from 'stripe';
-const stripeInstance = new stripe('sk_test_51Q41a4KIet24XIcEpJTka1D9AfSckFq9hWBjXHrnKGs8pQLV5aol1GSSNAjzIsn9bc0Aeo2OuVnin3PDBAC9w9Tn00nu9aOcDJ');
+const stripeInstance = new stripe(process.env.STRIPE_SECRET); 
 
 const router = Router();
 router.use(auth);
@@ -28,7 +31,7 @@ router.post(
 
     const newOrder = new OrderModel({ ...order, user: req.user.id });
     await newOrder.save();
-    res.send(newOrder);
+    res.send(newOrder); 
   })
 ); 
 
