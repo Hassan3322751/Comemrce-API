@@ -36,7 +36,7 @@
     </li>
     <li><strong>Setup Environment Variables:</strong>
       <p>Create a <code>.env</code> file in the root directory with the following variables:</p>
-      <pre><code>PORT=3000<br>MONGODB_URI=your-mongodb-uri<br>JWT_SECRET=your-jwt-secret</code></pre>
+      <pre><code>PORT=3000<br />MONGODB_URI=your-mongodb-uri<br />JWT_SECRET=your-jwt-secret</code></pre>
       <p>Replace <code>your-mongodb-uri</code> with your MongoDB connection URI and <code>your-jwt-secret</code> with a secret key for JWT.</p>
     </li>
     <li><strong>Run the Application:</strong>
