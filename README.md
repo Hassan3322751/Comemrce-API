@@ -3,42 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Commerce API</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    h1 {
-      color: #333;
-      text-align: center;
-    }
-    h2 {
-      color: #666;
-    }
-    p {
-      margin-bottom: 20px;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    li {
-      margin-bottom: 10px;
-    }
-    code {
-      background-color: #f0f0f0;
-      padding: 2px 6px;
-      border-radius: 4px;
-    }
-  </style>
 </head>
 <body>
 
-  <h1>Commerce API <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/shopping-trolley_1f6d2.png" alt="shopping cart" width="30"></h1>
+  <h1>Commerce API </h1>
 
   <h2>Project Description</h2>
   <p>Commerce API is a Node.js application providing backend services for an e-commerce platform.</p>
